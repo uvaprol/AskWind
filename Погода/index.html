@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спроси у ветра</title>
+    <link rel="icon" href="./img/cloudy.svg">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">ПОГОДА</h1>
+        <div class="search">
+            <input id="input" type="text" value="Амстердам" onClick="clean()" placeholder="Упс сайт накрылся">
+            <div id="btn" class="button" onClick=search()>
+                <img src="./img/done_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            </div>
+        </div>
+        <div class="box-temperature" id="box-temperature">
+            <h1 id="temperature" class="number-temperature"></h1>
+        </div>
+        <div class="box-otherData">
+            <div class="item">
+                <div id="wind" class="title"></div>
+                <div class="text">Ветер</div>
+
+            </div>
+            <div class="item">
+                <div id="visibility" class="title"></div>
+                <div class="text">Видимость</div>
+
+            </div>
+            <div class="item">
+                <div id="wet" class="title"></div>
+                <div class="text">Влажность</div>
+
+            </div>
+            <div class="item">
+                <div id="pressure" class="title"></div>
+                <div class="text">Давление</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./set.js"> </script>
+
+</html>
