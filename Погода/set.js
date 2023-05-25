@@ -1,17 +1,17 @@
 const DataIMG = {
-    'Clear':  'url(./img/sun_bg.svg)',
+    'Clear':  'url(./img/cloudy_bg.svg)',
     'Clouds': 'url(./img/cloud_bg.svg)',
     'Rain':   'url(./img/rain_bg.svg)',
 }
 
 const DataColor = {
-    'Clear':  '#51D5F6a1',
+    'Clear':  '#17FDFBa1',
     'Clouds': '#656598a1',
     'Rain':   '#4F7CC3a1',
 }
 
 const DataBodyColor = {
-    'Clear':  '#57DCFEa1',
+    'Clear':  '#1DEEEEa1',
     'Clouds': '#646496a1',
     'Rain':   '#4B78BFa1',
 }
@@ -23,7 +23,7 @@ const uvValue = document.getElementById('visibility')
 const wetValue = document.getElementById('wet')
 const pressureValue = document.getElementById('pressure')
 const btn = document.getElementById('btn')
-const APIKey = ''//your ApiKey
+const APIKey = '19f300df2fe467315a3b41f42f26dfd1'
 
 
 
@@ -117,12 +117,8 @@ function search(){
 
 
 window.addEventListener('load', search())
-document.addEventListener('enter', search())
 document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         search()
     }
 });
-
-
-
