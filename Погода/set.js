@@ -23,7 +23,7 @@ const uvValue = document.getElementById('visibility')
 const wetValue = document.getElementById('wet')
 const pressureValue = document.getElementById('pressure')
 const btn = document.getElementById('btn')
-const APIKey = ''
+const APIKey = ''// your ApiKey (https://openweathermap.org)
 
 
 
